@@ -1,0 +1,20 @@
+.footer {
+  padding: 30px 70px;
+  background-color: var(--footer-bg);
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.4rem;
+  color: var(--text-light);
+  line-height: 1.286;
+}
+.footer__text {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.footer__up {
+}
+.footer__up:hover {
+  text-decoration: underline;
+}
