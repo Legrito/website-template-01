@@ -1,0 +1,127 @@
+.article__big-post {
+}
+
+.article__related {
+  background: rgba(229, 229, 229, 0.3);
+}
+
+.article__content {
+  padding: 100px 0;
+}
+.article__container {
+  display: grid;
+  align-items: start;
+  gap: 20px;
+  grid-template-columns: 220px 1fr 220px;
+}
+.article__info {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 2.08;
+  font-weight: 700;
+  color: #495057;
+}
+.article__date {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+.article__date::after {
+  content: "";
+  height: 1px;
+  width: 35px;
+  background-color: var(--article-border);
+}
+.article__time {
+  text-align: left;
+}
+.article__body {
+  display: grid;
+  gap: 50px;
+}
+.article__text {
+  display: grid;
+  gap: 30px;
+  line-height: 1.786;
+}
+.article__text blockquote {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.28;
+  color: var(--accent);
+}
+.article__tags {
+  display: flex;
+  gap: 12px;
+  border-bottom: 0.5px solid var(--article-border);
+  padding-bottom: 50px;
+}
+.article__tag {
+  color: var(--text-decription);
+  border: 1px solid var(--text-light);
+}
+.article__tag:hover {
+  background-color: var(--text-light);
+}
+.category {
+}
+.article__autor {
+}
+.author {
+  display: flex;
+  gap: 17px;
+}
+.autor__avatar {
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.author__body {
+  display: grid;
+  align-self: center;
+  font-size: 1.2rem;
+  gap: 8px;
+}
+.author__title {
+  color: var(--footer-bg);
+}
+.author__skills {
+  color: var(--text-decription);
+}
+
+@media (max-width: 991.98px) {
+  .article__content {
+    padding: 70px 0;
+  }
+
+  .article__container {
+    grid-template-columns: 200px 1fr;
+  }
+
+  .article__body {
+    gap: 30px;
+  }
+
+  .article__tags {
+    padding-bottom: 30px;
+  }
+  .article__text {
+    gap: 15px;
+  }
+
+  .article__text blockquote {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .article__content {
+    padding: 40px 0;
+  }
+
+  .article__container {
+    grid-template-columns: auto;
+  }
+}

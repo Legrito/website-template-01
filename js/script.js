@@ -37,6 +37,14 @@ const windowLoad = () => {
         tabItems[getIndex(tabNavItem)].classList.add("active");
       }
     }
+
+    if (e.target.closest(".footer__up")) {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+      e.preventDefault();
+    }
   };
 
   document.addEventListener("click", documentActions);
